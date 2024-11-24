@@ -1,0 +1,62 @@
+2024-11-24 16:07:43,601 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-24 16:07:43,610 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:43,653 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-24 16:07:43,653 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:43,755 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-24 16:07:43,755 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:43,804 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-24 16:07:43,805 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:43,904 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-24 16:07:43,905 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:43,954 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-24 16:07:43,954 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,052 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,100 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,196 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,246 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,346 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,392 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:44,494 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-24 16:07:45,493 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (repeated 7 times) (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
