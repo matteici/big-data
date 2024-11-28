@@ -1,4 +1,31 @@
 {
   "version" : "5.3.3.v202411031102",
-  "projects" : [ ]
+  "projects" : [ {
+    "name" : "IBM Employee Attrition",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "IBM Employee Attrition"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "Building a Simple Classifier",
+    "timeUsed" : "2024-11-26T11:10:57.368191+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Example Workflows/Basic Examples/Building a Simple Classifier"
+    }
+  }, {
+    "name" : "IBM Employee Attrition",
+    "timeUsed" : "2024-11-26T21:03:00.916609+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "IBM Employee Attrition"
+    }
+  } ]
 }

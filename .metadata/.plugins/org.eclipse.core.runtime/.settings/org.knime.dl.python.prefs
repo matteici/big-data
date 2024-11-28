@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+kerasCondaEnvironmentDirectoryPath=/Applications/KNIME 5.3.2.app/Contents/Eclipse/bundling/envs/org_knime_pythonscripting
+librarySelection=tf2
+manualConfig=python3
+pythonConfigSelection=dl
+pythonEnvironmentType=conda
+serializerId=org.knime.serialization.flatbuffers.column
+tf2CondaEnvironmentDirectoryPath=/opt/anaconda3/envs/knime
+tf2ManualConfig=python3

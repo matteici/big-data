@@ -1,0 +1,625 @@
+!SESSION 2024-11-26 10:30:22.534 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/matteici/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -keyring /Users/matteici/.eclipse_keyring -showlocation
+
+!ENTRY org.knime.product 1 0 2024-11-26 20:08:33.428
+!MESSAGE ShellExec command: ./create_env.sh "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.pythonscripting.channel.v1.bin.macosx.aarch64_5.3.0.v202401241043/pkgs"
+
+!ENTRY org.knime.product 1 0 2024-11-26 20:08:33.428
+!MESSAGE ShellExec directory : /Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.pythonscripting.channel.v1.bin.macosx.aarch64_5.3.0.v202401241043/bin
+
+!ENTRY org.knime.product 1 0 2024-11-26 20:09:10.042
+!MESSAGE Standard output: Found KNIME_PYTHON_PACKAGE_REPO_URL=/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.pythonscripting.channel.v1.bin.macosx.aarch64_5.3.0.v202401241043/pkgs, using packages from there for installation
+Current directory: /Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.pythonscripting.channel.v1.bin.macosx.aarch64_5.3.0.v202401241043/bin
+Directory name: org.knime.pythonscripting.channel.v1.bin.macosx.aarch64_5.3.0.v202401241043
+Extension name: org_knime_pythonscripting
+The environment variable 'KNIME_PYTHON_BUNDLING_PATH' is not set
+The bundle path is set to: /Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.pythonscripting.channel.v1.bin.macosx.aarch64_5.3.0.v202401241043/bin/../../../bundling/envs/org_knime_pythonscripting
+
+!SESSION 2024-11-26 20:50:41.481 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/matteici/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -keyring /Users/matteici/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.gmf.runtime.common.ui 4 0 2024-11-26 23:17:13.598
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.gmf.runtime.common.ui.internal.CommonUIPlugin.stop() of bundle org.eclipse.gmf.runtime.common.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:913)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2115)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1985)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Shell.isDisposed()" because the return value of "org.eclipse.gmf.runtime.common.ui.util.UIModificationValidator$WindowListener.getShell()" is null
+	at org.eclipse.gmf.runtime.common.ui.util.UIModificationValidator.dispose(UIModificationValidator.java:208)
+	at org.eclipse.gmf.runtime.common.ui.internal.CommonUIPlugin.stop(CommonUIPlugin.java:84)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:893)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:885)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Shell.isDisposed()" because the return value of "org.eclipse.gmf.runtime.common.ui.util.UIModificationValidator$WindowListener.getShell()" is null
+	at org.eclipse.gmf.runtime.common.ui.util.UIModificationValidator.dispose(UIModificationValidator.java:208)
+	at org.eclipse.gmf.runtime.common.ui.internal.CommonUIPlugin.stop(CommonUIPlugin.java:84)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:893)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:885)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2115)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1985)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Unknown Source)
+!SESSION 2024-11-27 23:56:44.284 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/matteici/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -keyring /Users/matteici/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-11-27 23:57:04.587
+!MESSAGE IJobChangeListener timeout detected. Further calls to IJobChangeListener may occur in random order and join(family) can return too soon. IJobChangeListener should return within 3000 ms. IJobChangeListener methods should not block. Possible deadlock.
+!STACK 0
+java.util.concurrent.TimeoutException: IJobChangeListener timeout detected. Further calls to IJobChangeListener may occur in random order and join(family) can return too soon. IJobChangeListener should return within 3000 ms. IJobChangeListener methods should not block. Possible deadlock.
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:106)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:536)
+	at org.eclipse.core.internal.jobs.JobManager.cancel(JobManager.java:350)
+	at org.eclipse.core.internal.jobs.InternalJob.cancel(InternalJob.java:199)
+	at org.eclipse.core.runtime.jobs.Job.cancel(Job.java:290)
+	at org.eclipse.ui.dialogs.FilteredTree.textChanged(FilteredTree.java:745)
+	at org.eclipse.ui.dialogs.FilteredTree.lambda$2(FilteredTree.java:681)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:183)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.openInstallWizard(ProvisioningUI.java:249)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.openInstallWizard(ProvisioningUI.java:215)
+	at org.knime.workbench.ui.p2.actions.InvokeInstallSiteAction$1.run(InvokeInstallSiteAction.java:92)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2024-11-27 23:57:04.587
+!MESSAGE Thread that is running the IJobChangeListener: Worker-2
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.Semaphore.tryAcquire(Unknown Source)
+	at org.eclipse.ui.internal.PendingSyncExec.acquire(PendingSyncExec.java:39)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:88)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5247)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.DelayedFilterCheckboxTree$1.aboutToRun(DelayedFilterCheckboxTree.java:196)
+	at org.eclipse.core.internal.jobs.JobListeners$$Lambda$114/0x00000008002636d0.notify(Unknown Source)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEvent(JobListeners.java:160)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEventsAsync(JobListeners.java:140)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:80)
+	at org.eclipse.core.internal.jobs.JobManager.startJob(JobManager.java:1774)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+All thread infos: 
+"main" prio=6 Id=1 RUNNABLE
+	at java.management@17.0.5/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.5/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at java.management@17.0.5/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:120)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:536)
+	at org.eclipse.core.internal.jobs.JobManager.cancel(JobManager.java:350)
+	at org.eclipse.core.internal.jobs.InternalJob.cancel(InternalJob.java:199)
+	at org.eclipse.core.runtime.jobs.Job.cancel(Job.java:290)
+	...
+
+"Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.5/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.5/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+	at java.base@17.0.5/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@5b1ebbe
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@5b1ebbe
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.5/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+"Common-Cleaner" daemon prio=8 Id=12 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@3b802baa
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@3b802baa
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.5/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+	at java.base@17.0.5/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+
+"Notification Thread" daemon prio=9 Id=13 RUNNABLE
+
+"Active Thread: Equinox Container: 2cfc9eb8-32d8-4c9e-bd98-c900f56866d7" prio=5 Id=15 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@109941fa
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@109941fa
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+"Framework Event Dispatcher: Equinox Container: 2cfc9eb8-32d8-4c9e-bd98-c900f56866d7" daemon prio=5 Id=17 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@27103726
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@27103726
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:396)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+"Start Level: Equinox Container: 2cfc9eb8-32d8-4c9e-bd98-c900f56866d7" daemon prio=5 Id=18 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@2df6d461
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@2df6d461
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:396)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+"Refresh Thread: Equinox Container: 2cfc9eb8-32d8-4c9e-bd98-c900f56866d7" daemon prio=5 Id=19 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@1791670e
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@1791670e
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:396)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+"SCR Component Actor" daemon prio=5 Id=32 WAITING on java.util.LinkedList@4d5d6297
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.LinkedList@4d5d6297
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+
+"Bundle File Closer" daemon prio=5 Id=34 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@6bd2c51d
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@6bd2c51d
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:396)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+"EMF Reference Cleaner" daemon prio=5 Id=35 WAITING on java.lang.ref.ReferenceQueue$Lock@709c41da
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@709c41da
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:80)
+
+"Worker-JM" prio=5 Id=36 WAITING on java.util.ArrayList@6ca9f1d0
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.ArrayList@6ca9f1d0
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+
+"Worker-0" prio=5 Id=38 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Provisioning Event Dispatcher" daemon prio=5 Id=39 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@3741a170
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@3741a170
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:396)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+"Gogo shell" prio=5 Id=40 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2541b4d3
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2541b4d3
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"KNIME-ConfigurationArea-Checker" daemon prio=6 Id=46 TIMED_WAITING
+	at java.base@17.0.5/java.lang.Thread.sleep(Native Method)
+	at org.knime.core.internal.ConfigurationAreaChecker.lambda$0(ConfigurationAreaChecker.java:115)
+	at org.knime.core.internal.ConfigurationAreaChecker$$Lambda$320/0x0000000800286bb8.run(Unknown Source)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+
+"KNIME-Worker-0" daemon prio=3 Id=47 TIMED_WAITING on java.lang.Object@6c5e6da
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@6c5e6da
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:232)
+
+"pool-1-thread-1" prio=5 Id=48 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7f027735
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7f027735
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+"pool-2-thread-1" prio=5 Id=49 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@45f20384
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@45f20384
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+"ForkJoinPool.commonPool-worker-1" daemon prio=3 Id=50 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-2" daemon prio=3 Id=51 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-3" daemon prio=3 Id=52 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-4" daemon prio=3 Id=53 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-6" daemon prio=3 Id=55 TIMED_WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkUntil(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-5" daemon prio=3 Id=54 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-7" daemon prio=3 Id=56 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-8" daemon prio=3 Id=57 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-9" daemon prio=3 Id=58 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-10" daemon prio=3 Id=59 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"ForkJoinPool.commonPool-worker-11" daemon prio=3 Id=60 WAITING on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@6d3dc0c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+"KNIME-TempFileToucher-1" daemon prio=3 Id=61 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4467088e
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4467088e
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+"Worker-1" prio=5 Id=66 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"pool-3-thread-1" daemon prio=5 Id=67 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@283074e8
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@283074e8
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"pool-3-thread-2" daemon prio=5 Id=68 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@283074e8
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@283074e8
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"pool-3-thread-3" daemon prio=5 Id=69 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@283074e8
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@283074e8
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"chromium-EDT" daemon prio=6 Id=70 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7d0bbc49
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7d0bbc49
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"KNIME Progress Updater" prio=6 Id=73 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7eb370c5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7eb370c5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+"KNIME Memory Alert Distributor" daemon prio=3 Id=74 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@26c24e5
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@26c24e5
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at org.knime.core.data.util.memory.MemoryAlertSystem$3.run(MemoryAlertSystem.java:338)
+
+"KNIME Memory Alert Distributor" daemon prio=3 Id=76 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@29509774
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@29509774
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at org.knime.core.data.util.memory.MemoryAlertSystem$3.run(MemoryAlertSystem.java:338)
+
+"Timer-0" daemon prio=3 Id=77 TIMED_WAITING on java.util.TaskQueue@9198fe3
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@9198fe3
+	at java.base@17.0.5/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base@17.0.5/java.util.TimerThread.run(Unknown Source)
+
+"KNIME-Worker-1" daemon prio=3 Id=79 TIMED_WAITING on java.lang.Object@6cc9f35d
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@6cc9f35d
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:232)
+
+"Worker-2" prio=5 Id=93 TIMED_WAITING on java.util.concurrent.Semaphore$NonfairSync@22277482
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.Semaphore$NonfairSync@22277482
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.Semaphore.tryAcquire(Unknown Source)
+	at org.eclipse.ui.internal.PendingSyncExec.acquire(PendingSyncExec.java:39)
+	at org.eclipse.ui.internal.PendingSyncExec.waitUntilExecuted(PendingSyncExec.java:88)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:142)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@f61b92d
+
+"Worker-3" prio=5 Id=94 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"EventAdmin Async Event Dispatcher Thread" daemon prio=6 Id=95 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@670481b2
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@670481b2
+	at java.base@17.0.5/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:396)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+"pool-4-thread-1" prio=5 Id=96 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4474c514
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4474c514
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"pool-5-thread-1" prio=5 Id=97 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@465eb466
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@465eb466
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"Java2D Queue Flusher" daemon prio=10 Id=98 TIMED_WAITING on sun.java2d.opengl.OGLRenderQueue$QueueFlusher@5fc44b4b
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on sun.java2d.opengl.OGLRenderQueue$QueueFlusher@5fc44b4b
+	at java.desktop@17.0.5/sun.java2d.opengl.OGLRenderQueue$QueueFlusher.run(Unknown Source)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+
+"Java2D Disposer" daemon prio=10 Id=99 WAITING on java.lang.ref.ReferenceQueue$Lock@1c8e4810
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@1c8e4810
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.5/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.desktop@17.0.5/sun.java2d.Disposer.run(Unknown Source)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+
+"comm-pool-thread-1" daemon prio=5 Id=436 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7e3062f0
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7e3062f0
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"comm-pool-thread-1" daemon prio=5 Id=453 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@4dfe14d4
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@4dfe14d4
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+
+"comm-pool-thread-2" daemon prio=5 Id=501 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@4dfe14d4
+	at java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@4dfe14d4
+	at java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base@17.0.5/java.lang.Thread.run(Unknown Source)
+
+"Worker-4" prio=5 Id=1368 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Worker-5" prio=5 Id=1369 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at java.base@17.0.5/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4a467f08
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+

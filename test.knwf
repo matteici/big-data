@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow version="4.0" xmlns="http://www.knime.org/2008/09/XMLConfig">
+    <meta name="workflowName">Data_Preprocessing_Workflow</meta>
+    <node id="1" name="File Reader" type="org.knime.base.node.io.filehandling.filechooser.reader">
+        <config key="model">
+            <entry key="url" type="xstring" value="data.csv"/>
+        </config>
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="2" name="Statistics" type="org.knime.base.node.stats.statistics2.StatisticsNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="3" name="Missing Value Column Filter" type="org.knime.base.node.preproc.columnfilter.ColumnFilterNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="4" name="Missing Value" type="org.knime.base.node.preproc.missingvalue.MissingValueNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="5" name="Box Plot" type="org.knime.base.node.stats.boxplot.BoxplotNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="6" name="Numeric Outliers" type="org.knime.base.node.stats.numericoutliers.NumericOutliersNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="7" name="Duplicate Row Filter" type="org.knime.base.node.preproc.duplicaterowfilter.DuplicateRowFilterNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="8" name="Math Formula" type="org.knime.base.node.math.formula.MathFormulaNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="9" name="One-to-Many" type="org.knime.base.node.preproc.one2many.One2ManyNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="10" name="Ordinal Encoder" type="org.knime.base.node.preproc.ordinalencoder.OrdinalEncoderNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="11" name="Date&Time Extractor" type="org.knime.base.node.date.DateAndTimeExtractorNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="12" name="Correlation Filter" type="org.knime.base.node.stats.correlationfilter.CorrelationFilterNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="13" name="Normalizer" type="org.knime.base.node.preproc.normalizer.NormalizerNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="14" name="Lag Column" type="org.knime.base.node.timeseries.lagcolumn.LagColumnNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="15" name="Bar Chart" type="org.knime.base.node.stats.barchart.BarChartNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="16" name="SMOTE (H2O)" type="org.knime.ext.h2o.smote.H2OSmoteNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="17" name="Column Filter" type="org.knime.base.node.preproc.columnfilter.ColumnFilterNodeFactory">
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <node id="18" name="File Writer" type="org.knime.base.node.io.filehandling.filechooser.writer">
+        <config key="model">
+            <entry key="url" type="xstring" value="output.csv"/>
+        </config>
+        <portSpec type="org.knime.base.port.DataTablePortObject"/>
+    </node>
+    <!-- Connections -->
+    <connection sourceNodeId="1" targetNodeId="2"/>
+    <connection sourceNodeId="2" targetNodeId="3"/>
+    <connection sourceNodeId="3" targetNodeId="4"/>
+    <connection sourceNodeId="4" targetNodeId="5"/>
+    <connection sourceNodeId="5" targetNodeId="6"/>
+    <connection sourceNodeId="6" targetNodeId="7"/>
+    <connection sourceNodeId="7" targetNodeId="8"/>
+    <connection sourceNodeId="8" targetNodeId="9"/>
+    <connection sourceNodeId="9" targetNodeId="10"/>
+    <connection sourceNodeId="10" targetNodeId="11"/>
+    <connection sourceNodeId="11" targetNodeId="12"/>
+    <connection sourceNodeId="12" targetNodeId="13"/>
+    <connection sourceNodeId="13" targetNodeId="14"/>
+    <connection sourceNodeId="14" targetNodeId="15"/>
+    <connection sourceNodeId="15" targetNodeId="16"/>
+    <connection sourceNodeId="16" targetNodeId="17"/>
+    <connection sourceNodeId="17" targetNodeId="18"/>
+</workflow>

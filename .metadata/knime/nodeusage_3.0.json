@@ -4,14 +4,14 @@
     "nodestats": {
         "nodes": [
             {
-                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
-                "nodename": "CSV Reader",
-                "nrexecs": 1,
+                "id": "org.knime.base.node.preproc.partition.PartitionNodeFactory",
+                "nodename": "Partitioning",
+                "nrexecs": 0,
                 "nrfails": 0,
-                "exectime": 97,
-                "nrcreated": 1,
-                "successor": "n/a",
-                "successornodename": "n/a"
+                "exectime": 0,
+                "nrcreated": 0,
+                "successor": "org.knime.xgboost.base.nodes.predictor.XGBClassificationPredictorNodeFactory",
+                "successornodename": "XGBoost Predictor"
             }
         ],
         "metaNodes": {
@@ -19,10 +19,9 @@
         "wrappedNodes": {
         },
         "createdVia": {
-            "WEB_UI": 1
         }
     },
-    "uptime": 420422,
+    "uptime": 12916454,
     "workflowsOpened": 1,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
@@ -30,10 +29,10 @@
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
-    "lastUsedPerspective": "starter",
-    "launches": 3,
+    "lastUsedPerspective": "none",
+    "launches": 12,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 388961,
+    "timeSinceLastStart": 97285,
     "crashes": 0,
     "properlyShutDown": false
 }
