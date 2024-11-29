@@ -74,8 +74,8 @@
                 <config key="typelist">
                     <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
                 </config>
@@ -90,7 +90,7 @@
         <entry key="useOrderFromTargetDomain" type="xboolean" value="false"/>
         <entry key="useOrderFromFeatureDomain" type="xboolean" value="true"/>
         <entry key="solver" type="xstring" value="SAG"/>
-        <entry key="maxEpoch" type="xint" value="200"/>
+        <entry key="maxEpoch" type="xint" value="10000"/>
         <entry key="performLazy" type="xboolean" value="true"/>
         <entry key="epsilon" type="xdouble" value="1.0E-5"/>
         <entry key="learningRateStrategy" type="xstring" value="LineSearch"/>
@@ -164,6 +164,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="57fcdadb-d04a-4c96-a2c1-b12e483182d6"/>
+        <entry key="file_store_id" type="xstring" value="403622b0-13af-4a34-8e00-524e5cfb7c17"/>
     </config>
 </config>

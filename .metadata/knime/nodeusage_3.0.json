@@ -4,14 +4,44 @@
     "nodestats": {
         "nodes": [
             {
-                "id": "org.knime.base.node.preproc.partition.PartitionNodeFactory",
-                "nodename": "Partitioning",
+                "id": "org.knime.optimization.internal.node.parameter.loopend.LoopEndParOptNodeFactory",
+                "nodename": "Parameter Optimization Loop End",
                 "nrexecs": 0,
                 "nrfails": 0,
                 "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.optimization.internal.node.parameter.loopstart.LoopStartParOptNodeFactory",
+                "nodename": "Parameter Optimization Loop Start",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.optimization.internal.node.parameter.loopstart.tablenode.TableLoopStartParOptNodeFactory",
+                "nodename": "Parameter Optimization Loop Start (Table)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.crosstable.CrosstabNodeFactory",
+                "nodename": "Crosstab",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 159,
                 "nrcreated": 0,
-                "successor": "org.knime.xgboost.base.nodes.predictor.XGBClassificationPredictorNodeFactory",
-                "successornodename": "XGBoost Predictor"
+                "successor": "n/a",
+                "successornodename": "n/a"
             }
         ],
         "metaNodes": {
@@ -19,9 +49,10 @@
         "wrappedNodes": {
         },
         "createdVia": {
+            "WEB_UI": 3
         }
     },
-    "uptime": 12916454,
+    "uptime": 13574761,
     "workflowsOpened": 1,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
@@ -30,9 +61,9 @@
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
     "lastUsedPerspective": "none",
-    "launches": 12,
+    "launches": 13,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 97285,
+    "timeSinceLastStart": 166676,
     "crashes": 0,
     "properlyShutDown": false
 }

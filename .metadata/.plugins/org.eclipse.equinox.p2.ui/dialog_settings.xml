@@ -20,13 +20,13 @@
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizard.WizardSettings">
 		<item key="DIALOG_X_ORIGIN" value="0"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="2560"/>
-		<item key="DIALOG_HEIGHT" value="1415"/>
+		<item key="DIALOG_WIDTH" value="1512"/>
+		<item key="DIALOG_HEIGHT" value="944"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.PreselectedIUInstallWizard.WizardSettings">
-		<item key="DIALOG_X_ORIGIN" value="715"/>
-		<item key="DIALOG_Y_ORIGIN" value="292"/>
+		<item key="DIALOG_X_ORIGIN" value="445"/>
+		<item key="DIALOG_Y_ORIGIN" value="191"/>
 		<item key="DIALOG_WIDTH" value="875"/>
 		<item key="DIALOG_HEIGHT" value="517"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

@@ -2988,3 +2988,181 @@ In case Python packages are missing: you can create a new Python Conda environme
 2024-11-28 13:39:11,986 : WARN  : comm-pool-thread-7 :  : Node : XGBoost Predictor : 3:370 : The column 'DistanceFromHome (Number (double))' is not compatible with the required column 'DistanceFromHome (Number (integer))'.
 2024-11-28 13:39:13,170 : WARN  : KNIME-Worker-30-Double to Integer 3:371 :  : Node : XGBoost Predictor : 3:370 : The column 'DistanceFromHome (Number (double))' is not compatible with the required column 'DistanceFromHome (Number (integer))'.
 2024-11-28 13:39:13,842 : WARN  : KNIME-Worker-31-XGBoost Tree Ensemble Learner 3:369 :  : Node : XGBoost Predictor : 3:370 : The column 'DistanceFromHome (Number (double))' is not compatible with the required column 'DistanceFromHome (Number (integer))'.
+2024-11-28 19:26:26,689 : WARN  : ModalContext :  : Node : One to Many : 3:7 : Duplicate possible values found. Original column name will be appended
+2024-11-28 19:26:26,737 : WARN  : ModalContext :  : Node : Box Plot : 3:10 : The selected dimension column "BusinessTravel" does not exist in the table
+2024-11-28 19:26:26,739 : WARN  : ModalContext :  : Node : Box Plot : 3:10 : The selected dimension column "BusinessTravel" does not exist in the table
+2024-11-28 19:26:26,760 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 3:296 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-11-28 19:26:26,803 : WARN  : ModalContext :  : Node : Keras Network Learner : 3:334 : Execute failed: An error occurred while creating the Keras network from its layer specifications. Details:
+Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the "KNIME Deep Learning" Preferences.
+2024-11-28 19:26:26,823 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 3:351 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-11-28 19:26:26,841 : WARN  : ModalContext :  : Node : Keras Network Executor : 3:338 : No network output was selected.
+2024-11-28 19:26:26,841 : WARN  : ModalContext :  : Node : Keras Network Executor : 3:338 : No network output was selected.
+2024-11-28 19:26:27,166 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-28 19:26:27,173 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-28 19:26:27,215 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-28 19:26:27,215 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-28 19:26:27,315 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-28 19:26:27,315 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-28 19:26:27,364 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-28 19:26:27,364 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-28 19:26:27,466 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not set zoom level 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: t is not a function (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-28 19:26:27,466 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'name') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 23)
+2024-11-28 19:26:49,418 : WARN  : comm-pool-thread-1 :  : Node : Parameter Optimization Loop Start : 3:373 : No parameters defined
+2024-11-28 19:27:11,520 : WARN  : main :  : Node : Parameter Optimization Loop Start : 3:373 : No parameters defined
+2024-11-28 19:29:13,200 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-11-28 19:29:13,200 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-11-28 19:29:13,230 : WARN  : KNIME-Worker-9-Python Script 3:21 :  : DefaultPythonGateway : Python Script : 3:21 : Python standard output: 
+2024-11-28 19:29:13,230 : WARN  : KNIME-Worker-9-Python Script 3:21 :  : DefaultPythonGateway : Python Script : 3:21 : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-11-28 19:29:13,245 : ERROR : KNIME-Worker-9-Python Script 3:21 :  : Node : Python Script : 3:21 : Execute failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.takeOrCreateGatewayAndEnqueue(QueuedPythonGatewayFactory.java:276)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.getNextGateway(QueuedPythonGatewayFactory.java:253)
+	at org.knime.python3.QueuedPythonGatewayFactory.create(QueuedPythonGatewayFactory.java:118)
+	at org.knime.python3.scripting.nodes2.PythonScriptingSession.createGateway(PythonScriptingSession.java:423)
+	at org.knime.python3.scripting.nodes2.PythonScriptingSession.<init>(PythonScriptingSession.java:159)
+	at org.knime.python3.scripting.nodes2.PythonScriptNodeModel.execute(PythonScriptNodeModel.java:177)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-28 19:30:07,812 : WARN  : comm-pool-thread-1 :  : Node : Parameter Optimization Loop Start : 3:373 : No parameters defined
+2024-11-28 19:30:11,886 : WARN  : comm-pool-thread-1 :  : Node : Parameter Optimization Loop Start : 3:389 : No parameters defined
+2024-11-28 19:30:16,929 : WARN  : comm-pool-thread-1 :  : Node : Parameter Optimization Loop Start : 3:391 : No parameters defined
+2024-11-28 19:32:10,579 : WARN  : comm-pool-thread-3 :  : Node : Random Forest Learner : 3:393 : No configuration available
+2024-11-28 19:33:03,919 : WARN  : KNIME-Worker-10-Normalizer (PMML) 3:381 :  : Node : Random Forest Learner : 3:393 : No configuration available
+2024-11-28 19:33:04,049 : WARN  : KNIME-Worker-12-SMOTE 3:395 :  : Node : Random Forest Learner : 3:393 : No configuration available
+2024-11-28 19:35:51,317 : WARN  : main :  : Node : Parameter Optimization Loop Start : 3:389 : No parameters defined
+2024-11-28 19:38:35,571 : WARN  : main :  : WrappedNodeDialog : Parameter Optimization Loop Start : 3:389 : failed to apply settings: Maximum Tree Depth is an integer parameter but the step size is real
+org.knime.core.node.InvalidSettingsException: Maximum Tree Depth is an integer parameter but the step size is real
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.optimization.internal.node.parameter.loopstart.strategy.StrategySettings.validateStepSize(StrategySettings.java:353)
+	at org.knime.optimization.internal.node.parameter.loopstart.strategy.StrategySettings.validateParameters(StrategySettings.java:334)
+	at org.knime.optimization.internal.node.parameter.loopstart.LoopStartParOptNodeModel.validateSettings(LoopStartParOptNodeModel.java:107)
+	at org.knime.core.node.Node.validateSettings(Node.java:711)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:683)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1204)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1164)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2226)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:649)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:564)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:961)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:868)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-11-28 19:38:52,021 : ERROR : KNIME-Worker-58-Parameter Optimization Loop End 3:392 :  : Node : Parameter Optimization Loop End : 3:392 : Execute failed: Flowvariable 'null' not found!
+org.knime.core.node.InvalidSettingsException: Flowvariable 'null' not found!
+	at org.knime.optimization.internal.node.parameter.loopend.LoopEndParOptNodeModel.execute(LoopEndParOptNodeModel.java:187)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
