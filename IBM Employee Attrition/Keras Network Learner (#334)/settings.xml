@@ -327,11 +327,7 @@
         <entry key="python3_command" type="xstring" value=""/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="Execute failed: An error occurred while creating the Keras network from its layer specifications. Details:%%00010Deep learning Python back end installation tests failed.%%00010Cause: Python library 'tensorflow' or one of its dependencies is missing.%%00010Python library 'keras' or one of its dependencies is missing.%%00010In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the &quot;KNIME Deep Learning&quot; Preferences."/>
-    </config>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.dl.keras.base.nodes.learner.DLKerasLearnerNodeFactory"/>
     <entry key="node-name" type="xstring" value="Keras Network Learner"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Deep Learning - Keras Integration"/>

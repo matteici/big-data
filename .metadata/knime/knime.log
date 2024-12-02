@@ -3166,3 +3166,1340 @@ org.knime.core.node.InvalidSettingsException: Flowvariable 'null' not found!
 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
 	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-30 16:04:42,652 : ERROR : KNIME-Worker-60-Keras Network Learner 3:334 :  : Node : Keras Network Learner : 3:334 : Execute failed: An error occurred while creating the Keras network from its layer specifications. Details:
+Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the "KNIME Deep Learning" Preferences.
+java.io.IOException: An error occurred while creating the Keras network from its layer specifications. Details:
+Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the "KNIME Deep Learning" Preferences.
+	at org.knime.dl.keras.base.portobjects.DLKerasUnmaterializedPortObjectContent.materialize(DLKerasUnmaterializedPortObjectContent.java:113)
+	at org.knime.dl.keras.base.portobjects.DLKerasUnmaterializedNetworkPortObject.getNetwork(DLKerasUnmaterializedNetworkPortObject.java:133)
+	at org.knime.dl.keras.base.portobjects.DLKerasUnmaterializedNetworkPortObject.getNetwork(DLKerasUnmaterializedNetworkPortObject.java:1)
+	at org.knime.dl.keras.base.nodes.learner.DLKerasLearnerNodeModel.executeInternal(DLKerasLearnerNodeModel.java:643)
+	at org.knime.dl.keras.base.nodes.learner.DLKerasLearnerNodeModel.execute(DLKerasLearnerNodeModel.java:320)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.dl.core.DLInvalidEnvironmentException: Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the "KNIME Deep Learning" Preferences.
+	at org.knime.dl.keras.core.layers.DLKerasNetworkMaterializer.materialize(DLKerasNetworkMaterializer.java:142)
+	at org.knime.dl.keras.base.portobjects.DLKerasUnmaterializedPortObjectContent.materialize(DLKerasUnmaterializedPortObjectContent.java:107)
+	... 17 more
+Caused by: org.knime.dl.core.DLMissingDependencyException: Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the "KNIME Deep Learning" Preferences.
+	at org.knime.dl.python.core.DLPythonAbstractNetworkLoader$DLPythonInstallationTester$InstallationTestCallable.call(DLPythonAbstractNetworkLoader.java:182)
+	at org.knime.dl.python.core.DLPythonAbstractNetworkLoader$DLPythonInstallationTester$InstallationTestCallable.call(DLPythonAbstractNetworkLoader.java:1)
+	at org.knime.core.util.ThreadUtils$CallableWithContextImpl.callWithContext(ThreadUtils.java:383)
+	at org.knime.core.util.ThreadUtils$CallableWithContext.call(ThreadUtils.java:269)
+	... 3 more
+Caused by: org.knime.dl.core.DLInvalidEnvironmentException: Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+	at org.knime.dl.python.core.DLPythonAbstractCommands.testInstallation(DLPythonAbstractCommands.java:299)
+	at org.knime.dl.python.core.DLPythonAbstractNetworkLoader$DLPythonInstallationTester$InstallationTestCallable.call(DLPythonAbstractNetworkLoader.java:173)
+	... 6 more
+2024-11-30 16:04:42,674 : WARN  : KNIME-Worker-60-Keras Network Learner 3:334 :  : Node : Keras Network Executor : 3:338 : No network output was selected.
+2024-11-30 16:05:33,680 : WARN  : KNIME-Worker-63-Logistic Regression Learner 3:375 :  : Node : Logistic Regression Learner : 3:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-01 16:24:48,087 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:8, 3:10, 3:19, 3:21, 3:294, 3:296, 3:316, 3:322, 3:323, 3:324, 3:325, 3:326, 3:327, 3:328, 3:329, 3:330, 3:331, 3:332, 3:333, 3:334, 3:335, 3:336, 3:337, 3:338, 3:351, 3:353, 3:354, 3:355, 3:356, 3:357, 3:358, 3:359, 3:363, 3:364, 3:367, 3:368, 3:369, 3:370, 3:371, 3:372, 3:373, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:390, 3:391, 3:392, 3:393, 3:394, 3:395, 3:396] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-01 16:24:48,089 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:8, 3:10, 3:19, 3:21, 3:294, 3:296, 3:316, 3:322, 3:323, 3:324, 3:325, 3:326, 3:327, 3:328, 3:329, 3:330, 3:331, 3:332, 3:333, 3:334, 3:335, 3:336, 3:337, 3:338, 3:351, 3:353, 3:354, 3:355, 3:356, 3:357, 3:358, 3:359, 3:363, 3:364, 3:367, 3:368, 3:369, 3:370, 3:371, 3:372, 3:373, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:390, 3:391, 3:392, 3:393, 3:394, 3:395, 3:396] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-01 16:29:15,052 : WARN  : comm-pool-thread-22 :  : Node : One to Many : 4:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-01 16:29:15,054 : WARN  : comm-pool-thread-22 :  : Node : One to Many : 4:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-01 16:32:30,093 : WARN  : ModalContext :  : Node : One to Many : 3:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-01 16:32:30,095 : WARN  : ModalContext :  : Node : One to Many : 3:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-01 16:36:14,265 : WARN  : KNIME-Worker-2-Math Formula 3:4 :  : Node : One to Many : 3:7 : Duplicate possible values found. Original column name will be appended
+2024-12-01 16:36:14,277 : WARN  : KNIME-Worker-3-Numeric Binner 3:6 :  : Node : One to Many : 3:7 : Duplicate possible values found. Original column name will be appended
+2024-12-01 16:36:14,278 : WARN  : KNIME-Worker-2-One to Many 3:7 :  : Node : One to Many : 3:7 : Duplicate possible values found. Original column name will be appended
+2024-12-01 16:36:31,622 : ERROR : KNIME-Worker-2-Group Mutual Information 3:397 :  : Node : Group Mutual Information : 3:397 : Execute failed: Could not find attribute-column with name 'treatment'
+java.lang.IllegalArgumentException: Could not find attribute-column with name 'treatment'
+	at de.mpicbg.knime.knutils.InputTableAttribute.findColumnByName(InputTableAttribute.java:46)
+	at de.mpicbg.knime.knutils.InputTableAttribute.<init>(InputTableAttribute.java:27)
+	at de.mpicbg.knime.knutils.InputTableAttribute.<init>(InputTableAttribute.java:22)
+	at de.mpicbg.knime.hcs.base.nodes.preproc.GroupMutualInformation.execute(GroupMutualInformation.java:89)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:816)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-01 16:36:43,787 : WARN  : KNIME-Worker-3-Parameter Mutual Information 3:398 :  : Node : Parameter Mutual Information : 3:398 : Node created empty data tables on all out-ports.
+2024-12-01 16:36:45,069 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:398 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:397, 3:399] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-01 16:36:45,070 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:398 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:397, 3:399] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-01 16:36:46,283 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:397 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:399] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-01 16:36:46,283 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:397 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:399] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-01 16:36:48,118 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:36:48,118 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:36:48,151 : WARN  : KNIME-Worker-2-Python Script 3:399 :  : DefaultPythonGateway : Python Script : 3:399 : Python standard output: 
+2024-12-01 16:36:48,151 : WARN  : KNIME-Worker-2-Python Script 3:399 :  : DefaultPythonGateway : Python Script : 3:399 : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:36:48,169 : ERROR : KNIME-Worker-2-Python Script 3:399 :  : Node : Python Script : 3:399 : Execute failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.takeOrCreateGatewayAndEnqueue(QueuedPythonGatewayFactory.java:276)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.getNextGateway(QueuedPythonGatewayFactory.java:253)
+	at org.knime.python3.QueuedPythonGatewayFactory.create(QueuedPythonGatewayFactory.java:118)
+	at org.knime.python3.scripting.nodes2.PythonScriptingSession.createGateway(PythonScriptingSession.java:423)
+	at org.knime.python3.scripting.nodes2.PythonScriptingSession.<init>(PythonScriptingSession.java:159)
+	at org.knime.python3.scripting.nodes2.PythonScriptNodeModel.execute(PythonScriptNodeModel.java:177)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-01 16:36:55,099 : ERROR : python-execution :  : PythonScriptingService : Python Script : 3:399 : Execution failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:36:55,144 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:36:55,144 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:36:56,819 : ERROR : python-execution :  : PythonScriptingService : Python Script : 3:399 : Execution failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:36:56,862 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:36:56,863 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:37:15,136 : ERROR : KNIME-Worker-3-Python Script 3:399 :  : Node : Python Script : 3:399 : Execute failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:37:15,178 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:37:15,178 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:37:15,931 : ERROR : KNIME-Worker-2-Python Script 3:399 :  : Node : Python Script : 3:399 : Execute failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:37:15,972 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:37:15,972 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:37:16,469 : ERROR : KNIME-Worker-3-Python Script 3:399 :  : Node : Python Script : 3:399 : Execute failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:37:16,512 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:37:16,513 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:37:16,918 : ERROR : KNIME-Worker-2-Python Script 3:399 :  : Node : Python Script : 3:399 : Execute failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:37:16,963 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:37:16,963 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:37:25,345 : ERROR : python-execution :  : PythonScriptingService : Python Script : 3:399 : Execution failed: Could not connect to the Python process.
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:281)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:204)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:150)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:301)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:267)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-01 16:37:25,390 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2024-12-01 16:37:25,390 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.3.2.app/Contents/Eclipse/plugins/org.knime.python3.scripting.nodes_5.3.2.v202409031127/src/main/python/_knime_scripting_launcher.py", line 52, in <module>
+    import py4j.clientserver
+ModuleNotFoundError: No module named 'py4j'
+
+2024-12-01 16:38:02,296 : WARN  : KNIME-Worker-3-Python Script 3:399 :  : PythonScriptNodeModel : Python Script : 3:399 : Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+2024-12-01 16:38:02,310 : ERROR : KNIME-Worker-3-Python Script 3:399 :  : Node : Python Script : 3:399 : Execute failed: ValueError: The target column 'Attrition_Yes' is missing from the input table.
+org.knime.core.node.KNIMEException: Execute failed: ValueError: The target column 'Attrition_Yes' is missing from the input table.
+	at org.knime.python3.scripting.nodes2.PythonScriptNodeModel.checkExecutionAnswer(PythonScriptNodeModel.java:252)
+	at org.knime.python3.scripting.nodes2.PythonScriptNodeModel.runUserScript(PythonScriptNodeModel.java:240)
+	at org.knime.python3.scripting.nodes2.PythonScriptNodeModel.execute(PythonScriptNodeModel.java:185)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-01 16:41:13,545 : WARN  : KNIME-Worker-4-Logistic Regression Learner 3:375 :  : Node : Logistic Regression Learner : 3:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-01 16:51:18,036 : WARN  : main :  : WrappedNodeDialog : Parameter Optimization Loop Start : 3:401 : failed to apply settings: java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3
+org.knime.core.node.InvalidSettingsException: java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:559)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at org.knime.optimization.internal.node.parameter.loopstart.parameter.ParameterTableModel.setValueAt(ParameterTableModel.java:171)
+	at java.desktop/javax.swing.JTable.setValueAt(Unknown Source)
+	at java.desktop/javax.swing.JTable.editingStopped(Unknown Source)
+	at java.desktop/javax.swing.AbstractCellEditor.fireEditingStopped(Unknown Source)
+	at java.desktop/javax.swing.DefaultCellEditor$EditorDelegate.stopCellEditing(Unknown Source)
+	at java.desktop/javax.swing.DefaultCellEditor.stopCellEditing(Unknown Source)
+	at java.desktop/javax.swing.JTable$GenericEditor.stopCellEditing(Unknown Source)
+	at org.knime.optimization.internal.node.parameter.loopstart.parameter.ParameterDialog.save(ParameterDialog.java:158)
+	at org.knime.optimization.internal.node.parameter.loopstart.LoopStartParOptNodeDialog.saveSettingsTo(LoopStartParOptNodeDialog.java:135)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	... 16 more
+2024-12-01 16:51:21,768 : WARN  : main :  : WrappedNodeDialog : Parameter Optimization Loop Start : 3:401 : failed to apply settings: java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3
+org.knime.core.node.InvalidSettingsException: java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:559)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at org.knime.optimization.internal.node.parameter.loopstart.parameter.ParameterTableModel.setValueAt(ParameterTableModel.java:171)
+	at java.desktop/javax.swing.JTable.setValueAt(Unknown Source)
+	at java.desktop/javax.swing.JTable.editingStopped(Unknown Source)
+	at java.desktop/javax.swing.AbstractCellEditor.fireEditingStopped(Unknown Source)
+	at java.desktop/javax.swing.DefaultCellEditor$EditorDelegate.stopCellEditing(Unknown Source)
+	at java.desktop/javax.swing.DefaultCellEditor.stopCellEditing(Unknown Source)
+	at java.desktop/javax.swing.JTable$GenericEditor.stopCellEditing(Unknown Source)
+	at org.knime.optimization.internal.node.parameter.loopstart.parameter.ParameterDialog.save(ParameterDialog.java:158)
+	at org.knime.optimization.internal.node.parameter.loopstart.LoopStartParOptNodeDialog.saveSettingsTo(LoopStartParOptNodeDialog.java:135)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	... 16 more
+2024-12-01 17:10:16,057 : WARN  : main :  : WrappedNodeDialog : One to Many : 3:7 : failed to apply settings: Cannot load settings into node; it is executing or has executing successors
+java.lang.IllegalStateException: Cannot load settings into node; it is executing or has executing successors
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2239)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:630)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:564)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:961)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:868)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-12-01 17:10:26,397 : WARN  : main :  : WrappedNodeDialog : One to Many : 3:7 : failed to apply settings: Cannot load settings into node; it is executing or has executing successors
+java.lang.IllegalStateException: Cannot load settings into node; it is executing or has executing successors
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2239)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:630)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:564)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:961)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:868)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2024-12-01 17:11:18,324 : WARN  : ModalContext :  : Node : Parameter Optimization Loop Start : 4:373 : No parameters defined
+2024-12-01 17:11:18,324 : WARN  : ModalContext :  : Node : Parameter Optimization Loop Start : 4:373 : No parameters defined
+2024-12-01 17:11:18,325 : WARN  : ModalContext :  : Node : Parameter Optimization Loop Start : 4:391 : No parameters defined
+2024-12-01 17:11:18,325 : WARN  : ModalContext :  : Node : Parameter Optimization Loop Start : 4:391 : No parameters defined
+2024-12-01 17:11:18,343 : WARN  : ModalContext :  : Node : One to Many : 4:7 : Duplicate possible values found. Original column name will be appended
+2024-12-01 17:11:18,372 : WARN  : ModalContext :  : Node : Box Plot : 4:10 : The selected dimension column "BusinessTravel" does not exist in the table
+2024-12-01 17:11:18,373 : WARN  : ModalContext :  : Node : Box Plot : 4:10 : The selected dimension column "BusinessTravel" does not exist in the table
+2024-12-01 17:11:18,393 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 4:296 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-01 17:11:18,419 : WARN  : ModalContext :  : Node : Keras Network Learner : 4:334 : Execute failed: An error occurred while creating the Keras network from its layer specifications. Details:
+Deep learning Python back end installation tests failed.
+Cause: Python library 'tensorflow' or one of its dependencies is missing.
+Python library 'keras' or one of its dependencies is missing.
+In case Python packages are missing: you can create a new Python Conda environment that contains all packages required by the KNIME deep learning integrations in the "KNIME Deep Learning" Preferences.
+2024-12-01 17:11:18,434 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 4:351 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-01 17:11:18,447 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 4:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-01 17:11:18,468 : WARN  : ModalContext :  : Node : Keras Network Executor : 4:338 : No network output was selected.
+2024-12-01 17:11:18,469 : WARN  : ModalContext :  : Node : Keras Network Executor : 4:338 : No network output was selected.
+2024-12-01 17:11:28,648 : WARN  : main :  : Node : One to Many : 4:7 : Duplicate possible values found. Original column name will be appended
+2024-12-01 17:11:28,650 : WARN  : main :  : Node : Rule Engine : 4:335 : Line: 5: Not a column: Attrition
+$Attrition$ = "Yes" => 1
+^
+2024-12-01 17:11:28,650 : WARN  : main :  : Node : Partitioning : 4:359 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:11:28,651 : WARN  : main :  : Node : Partitioning : 4:388 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:11:28,651 : WARN  : main :  : Node : Box Plot : 4:10 : The selected dimension column "Attrition" does not exist in the table
+2024-12-01 17:11:28,651 : WARN  : main :  : Node : Partitioning : 4:294 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:11:38,565 : WARN  : comm-pool-thread-30 :  : Node : Rule Engine : 4:335 : Line: 5: Not a column: Attrition
+$Attrition$ = "Yes" => 1
+^
+2024-12-01 17:11:38,567 : WARN  : comm-pool-thread-30 :  : Node : Partitioning : 4:359 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:11:38,567 : WARN  : comm-pool-thread-30 :  : Node : Partitioning : 4:388 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:11:38,567 : WARN  : comm-pool-thread-30 :  : Node : Box Plot : 4:10 : The selected dimension column "Attrition" does not exist in the table
+2024-12-01 17:11:38,570 : WARN  : comm-pool-thread-30 :  : Node : Partitioning : 4:294 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:11:43,386 : WARN  : KNIME-Worker-40-One to Many 4:7 :  : Node : One to Many : 4:7 : Duplicate possible values found. Original column name will be appended
+2024-12-01 17:11:43,429 : WARN  : KNIME-Worker-39-Column Filter 4:323 :  : Node : Rule Engine : 4:335 : Line: 5: Not a column: Attrition
+$Attrition$ = "Yes" => 1
+^
+2024-12-01 17:11:43,429 : WARN  : KNIME-Worker-39-Column Filter 4:323 :  : Node : Box Plot : 4:10 : The selected dimension column "Attrition" does not exist in the table
+2024-12-01 17:11:43,468 : WARN  : KNIME-Worker-48-Normalizer (PMML) 4:381 :  : Node : Partitioning : 4:388 : Column 'Attrition' for stratified sampling does not exist
+2024-12-01 17:12:44,930 : WARN  : main :  : Node : SMOTE : 4:384 : No such column: Attrition
+2024-12-01 17:12:44,932 : WARN  : main :  : Node : SMOTE : 4:395 : No such column: Attrition
+2024-12-01 17:12:44,932 : WARN  : main :  : Node : SMOTE : 4:374 : No such column: Attrition
+2024-12-01 17:12:44,932 : WARN  : main :  : Node : SMOTE : 4:377 : No such column: Attrition
+2024-12-01 17:12:46,966 : WARN  : KNIME-Worker-47-Partitioning 4:388 :  : Node : SMOTE : 4:384 : No such column: Attrition
+2024-12-01 17:12:46,966 : WARN  : KNIME-Worker-47-Partitioning 4:388 :  : Node : SMOTE : 4:395 : No such column: Attrition
+2024-12-01 17:12:46,966 : WARN  : KNIME-Worker-47-Partitioning 4:388 :  : Node : SMOTE : 4:374 : No such column: Attrition
+2024-12-01 17:12:46,966 : WARN  : KNIME-Worker-47-Partitioning 4:388 :  : Node : SMOTE : 4:377 : No such column: Attrition
+2024-12-01 17:13:03,289 : ERROR : main :  : RegressionPredictorNodeDialogPane : Logistic Regression Predictor : 4:376 : Error loading model settings
+java.lang.NullPointerException: Cannot invoke "org.knime.core.node.port.pmml.PMMLPortObjectSpec.getTargetCols()" because "pmmlSpec" is null
+	at org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeModel.checkModelTargetType(RegressionPredictorNodeModel.java:227)
+	at org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeDialogPane.loadSettingsFrom(RegressionPredictorNodeDialogPane.java:228)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:535)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:488)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-02 10:21:17,752 : WARN  : comm-pool-thread-37 :  : Node : Parameter Optimization Loop End : 3:410 : Wrong Loop Start Node Connected
+2024-12-02 10:34:20,589 : WARN  : KNIME-Worker-58-Python Script 3:417 :  : Node : Python Script : 3:417 : Node created an empty data table.
+2024-12-02 10:34:51,338 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:418 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:399, 3:403, 3:404, 3:405, 3:406, 3:407, 3:409, 3:410, 3:411, 3:412, 3:413, 3:414, 3:415, 3:416, 3:417] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 10:34:51,342 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:418 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:399, 3:403, 3:404, 3:405, 3:406, 3:407, 3:409, 3:410, 3:411, 3:412, 3:413, 3:414, 3:415, 3:416, 3:417] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-02 10:37:52,254 : WARN  : KNIME-Worker-67-Python Script 3:417 :  : Node : Python Script : 3:417 : Node created an empty data table.
+2024-12-02 10:38:25,230 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:418 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:399, 3:403, 3:404, 3:405, 3:406, 3:407, 3:409, 3:410, 3:411, 3:412, 3:413, 3:414, 3:415, 3:416, 3:417] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 10:38:25,232 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:418 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:323, 3:374, 3:375, 3:376, 3:377, 3:378, 3:379, 3:380, 3:381, 3:382, 3:383, 3:384, 3:385, 3:386, 3:387, 3:388, 3:389, 3:392, 3:393, 3:394, 3:395, 3:396, 3:399, 3:403, 3:404, 3:405, 3:406, 3:407, 3:409, 3:410, 3:411, 3:412, 3:413, 3:414, 3:415, 3:416, 3:417] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-02 10:39:04,531 : WARN  : KNIME-Worker-70-Python Script 3:417 :  : Node : Python Script : 3:417 : Node created an empty data table.
+2024-12-02 10:39:27,214 : WARN  : KNIME-Worker-62-Python Script 3:417 :  : Node : Python Script : 3:417 : Node created an empty data table.
+2024-12-02 10:39:36,765 : WARN  : KNIME-Worker-79-Python Script 3:417 :  : Node : Python Script : 3:417 : Node created an empty data table.
+2024-12-02 11:01:54,805 : ERROR : KNIME-Worker-56-Decision Tree Learner 3:407 :  : Node : Decision Tree Learner : 3:407 : Execute failed: Pruning methdod 0 not allowed.
+java.lang.IllegalArgumentException: Pruning methdod 0 not allowed.
+	at org.knime.base.node.mine.decisiontree2.learner2.DecisionTreeLearnerNodeModel2.pruneTree(DecisionTreeLearnerNodeModel2.java:687)
+	at org.knime.base.node.mine.decisiontree2.learner2.DecisionTreeLearnerNodeModel2.execute(DecisionTreeLearnerNodeModel2.java:557)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 11:03:14,967 : WARN  : main :  : Node : Decision Tree Learner : 3:407 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "splitMeasure"
+2024-12-02 11:03:16,900 : WARN  : KNIME-Worker-62-Parameter Optimization Loop Start 3:416 :  : Node : Decision Tree Learner : 3:407 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "splitMeasure"
+2024-12-02 11:03:28,625 : ERROR : KNIME-Worker-67-Decision Tree Learner 3:407 :  : Node : Decision Tree Learner : 3:407 : Execute failed: Pruning methdod 0 not allowed.
+java.lang.IllegalArgumentException: Pruning methdod 0 not allowed.
+	at org.knime.base.node.mine.decisiontree2.learner2.DecisionTreeLearnerNodeModel2.pruneTree(DecisionTreeLearnerNodeModel2.java:687)
+	at org.knime.base.node.mine.decisiontree2.learner2.DecisionTreeLearnerNodeModel2.execute(DecisionTreeLearnerNodeModel2.java:557)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 11:10:30,996 : WARN  : comm-pool-thread-70 :  : Node : One to Many : 5:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:10:30,998 : WARN  : comm-pool-thread-70 :  : Node : One to Many : 5:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:10:54,868 : WARN  : KNIME-Worker-101-Math Formula 5:4 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:10:54,871 : WARN  : KNIME-Worker-102-Numeric Binner 5:6 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:10:54,871 : WARN  : KNIME-Worker-103-One to Many 5:7 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:11:23,189 : WARN  : comm-pool-thread-71 :  : Node : One to Many : 5:422 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:11:23,190 : WARN  : comm-pool-thread-71 :  : Node : One to Many : 5:422 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:27:45,304 : WARN  : comm-pool-thread-77 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:27:55,240 : WARN  : main :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:28:14,908 : WARN  : KNIME-Worker-117-Math Formula 5:4 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:28:14,912 : WARN  : KNIME-Worker-118-Numeric Binner 5:6 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:28:14,912 : WARN  : KNIME-Worker-119-One to Many 5:7 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:33:00,975 : WARN  : comm-pool-thread-78 :  : Node : One to Many : 7:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:33:00,976 : WARN  : comm-pool-thread-78 :  : Node : One to Many : 7:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:39:39,959 : ERROR : main :  : GenericNodeDialog : XGBoost Tree Ensemble Learner : 7:414 : Error loading model settings
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at org.knime.core.data.DataTableSpec.getColumnSpec(DataTableSpec.java:811)
+	at org.knime.xgboost.base.nodes.learner.DataSettingsSerializer.loadFrom(DataSettingsSerializer.java:81)
+	at org.knime.xgboost.base.nodes.learner.DataSettingsSerializer.loadFrom(DataSettingsSerializer.java:1)
+	at org.knime.xgboost.base.nodes.learner.TabBasedLearnerSettingsSerializer.loadOptionsTab(TabBasedLearnerSettingsSerializer.java:117)
+	at org.knime.xgboost.base.nodes.learner.TabBasedLearnerSettingsSerializer.loadFrom(TabBasedLearnerSettingsSerializer.java:109)
+	at org.knime.xgboost.base.nodes.learner.TabBasedLearnerSettingsSerializer.loadFrom(TabBasedLearnerSettingsSerializer.java:1)
+	at org.knime.xgboost.core.dialog.GenericNodeDialog.loadSettingsFrom(GenericNodeDialog.java:98)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:535)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:488)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-02 11:39:48,835 : WARN  : KNIME-Worker-158-Math Formula 7:4 :  : Node : One to Many : 7:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:39:48,839 : WARN  : KNIME-Worker-159-Numeric Binner 7:6 :  : Node : One to Many : 7:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:39:48,839 : WARN  : KNIME-Worker-160-One to Many 7:7 :  : Node : One to Many : 7:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:42:46,356 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 7:415 valid [7:1, 7:2, 7:3, 7:4, 7:6, 7:7, 7:323, 7:381, 7:388, 7:404, 7:405, 7:406, 7:411, 7:412, 7:414] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 11:42:46,358 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 7:415 valid [7:1, 7:2, 7:3, 7:4, 7:6, 7:7, 7:323, 7:381, 7:388, 7:404, 7:405, 7:406, 7:411, 7:412, 7:414] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-02 11:46:37,742 : WARN  : comm-pool-thread-85 :  : Node : One to Many : 5:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:46:37,744 : WARN  : comm-pool-thread-85 :  : Node : One to Many : 5:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 11:47:17,898 : WARN  : KNIME-Worker-189-Math Formula 5:4 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:47:17,903 : WARN  : KNIME-Worker-190-Numeric Binner 5:6 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:47:17,903 : WARN  : KNIME-Worker-191-One to Many 5:7 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:58:12,057 : WARN  : KNIME-Worker-195-Logistic Regression Learner 5:375 :  : Node : Logistic Regression Learner : 5:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-02 11:59:42,792 : WARN  : comm-pool-thread-93 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 11:59:45,015 : WARN  : KNIME-Worker-197-One to Many 5:7 :  : Node : One to Many : 5:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 12:00:09,421 : WARN  : KNIME-Worker-201-Logistic Regression Learner 5:375 :  : Node : Logistic Regression Learner : 5:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-02 12:09:35,125 : WARN  : main :  : Node : Parameter Optimization Loop Start : 5:390 : stepSize is an integer parameter but the step size is real. The step size will be rounded.
+2024-12-02 12:09:35,128 : WARN  : main :  : Node : Parameter Optimization Loop Start : 5:390 : stepSize is an integer parameter but the step size is real. The step size will be rounded.
+2024-12-02 12:09:35,128 : WARN  : main :  : Node : Parameter Optimization Loop Start : 5:390 : stepSize is an integer parameter but the step size is real. The step size will be rounded.
+2024-12-02 12:10:13,873 : ERROR : main :  : RegressionPredictorNodeDialogPane : Logistic Regression Predictor : 5:394 : Error loading model settings
+java.lang.NullPointerException: Cannot invoke "org.knime.core.node.port.pmml.PMMLPortObjectSpec.getTargetCols()" because "pmmlSpec" is null
+	at org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeModel.checkModelTargetType(RegressionPredictorNodeModel.java:227)
+	at org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeDialogPane.loadSettingsFrom(RegressionPredictorNodeDialogPane.java:228)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:535)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:488)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-02 12:12:30,123 : WARN  : main :  : WrappedNodeDialog : Logistic Regression Learner : 5:393 : failed to apply settings: Please provide a valid value for epsilon.
+org.knime.core.node.InvalidSettingsException: Please provide a valid value for epsilon.
+	at org.knime.base.node.mine.regression.logistic.learner4.LogRegLearnerNodeDialogPane.saveSettingsTo(LogRegLearnerNodeDialogPane.java:679)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-02 12:14:49,917 : WARN  : main :  : Node : Logistic Regression Learner : 5:393 : Errors loading flow variables into node : The initial learning rate must be larger than 0 but was 0.00000.
+2024-12-02 12:14:51,046 : WARN  : main :  : Node : Logistic Regression Learner : 5:393 : Errors loading flow variables into node : The initial learning rate must be larger than 0 but was 0.00000.
+2024-12-02 12:14:57,948 : WARN  : KNIME-Worker-207-Parameter Optimization Loop Start 5:390 :  : Node : Parameter Optimization Loop Start : 5:390 : stepSize is an integer parameter but the step size is real. The step size will be rounded.
+2024-12-02 12:14:57,949 : WARN  : KNIME-Worker-207-Parameter Optimization Loop Start 5:390 :  : Node : Logistic Regression Learner : 5:393 : Errors loading flow variables into node : The initial learning rate must be larger than 0 but was 0.00000.
+2024-12-02 12:23:39,948 : WARN  : KNIME-Worker-203-Logistic Regression Learner 5:375 :  : Node : Logistic Regression Learner : 5:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-02 15:08:16,870 : WARN  : KNIME-Worker-214-Logistic Regression Learner 3:375 :  : Node : Logistic Regression Learner : 3:375 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-12-02 15:08:25,059 : ERROR : KNIME-Worker-220-Parameter Optimization Loop End 5:395 :  : Node : Parameter Optimization Loop End : 5:395 : Execute failed: Flowvariable 'null' not found!
+org.knime.core.node.InvalidSettingsException: Flowvariable 'null' not found!
+	at org.knime.optimization.internal.node.parameter.loopend.LoopEndParOptNodeModel.execute(LoopEndParOptNodeModel.java:187)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 15:16:55,790 : WARN  : comm-pool-thread-109 :  : Node : Row Filter : 5:396 : At least one filter criterion is needed.
+2024-12-02 15:20:00,057 : WARN  : comm-pool-thread-110 :  : Node : Row Filter : 5:396 : Unknown column "P>|z|".
+2024-12-02 15:28:28,968 : WARN  : comm-pool-thread-114 :  : Node : Column Filter : 5:398 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "Variable"
+2024-12-02 15:28:35,010 : ERROR : main :  : InitialData : Column Filter : 5:398 : Error overwriting settings of type MODEL with flow variables. So the flow variables are ignored. Error message is: Errors overwriting node settings with flow variables: Unknown variable "Variable".
+org.knime.core.node.InvalidSettingsException: Errors overwriting node settings with flow variables: Unknown variable "Variable"
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:447)
+	at org.knime.core.node.workflow.SingleNodeContainer.getModelSettingsUsingFlowObjectStack(SingleNodeContainer.java:472)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByFlowVariables(InitialData.java:137)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:109)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: org.knime.core.node.InvalidSettingsException: Unknown variable "Variable"
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.getVariable(ConfigEditTreeModel.java:763)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteWithVariable(ConfigEditTreeModel.java:679)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:657)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel.overwriteSettings(ConfigEditTreeModel.java:306)
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:445)
+	... 55 more
+2024-12-02 15:28:57,920 : ERROR : main :  : InitialData : Column Filter : 5:398 : Error overwriting settings of type MODEL with flow variables. So the flow variables are ignored. Error message is: Errors overwriting node settings with flow variables: Unknown variable "Variable".
+org.knime.core.node.InvalidSettingsException: Errors overwriting node settings with flow variables: Unknown variable "Variable"
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:447)
+	at org.knime.core.node.workflow.SingleNodeContainer.getModelSettingsUsingFlowObjectStack(SingleNodeContainer.java:472)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByFlowVariables(InitialData.java:137)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:109)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: org.knime.core.node.InvalidSettingsException: Unknown variable "Variable"
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.getVariable(ConfigEditTreeModel.java:763)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteWithVariable(ConfigEditTreeModel.java:679)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:657)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel.overwriteSettings(ConfigEditTreeModel.java:306)
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:445)
+	... 55 more
+2024-12-02 15:31:04,803 : WARN  : comm-pool-thread-116 :  : Node : Column Filter : 5:398 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "Variable"
+2024-12-02 15:31:08,445 : ERROR : main :  : InitialData : Column Filter : 5:398 : Error overwriting settings of type MODEL with flow variables. So the flow variables are ignored. Error message is: Errors overwriting node settings with flow variables: Unknown variable "Variable".
+org.knime.core.node.InvalidSettingsException: Errors overwriting node settings with flow variables: Unknown variable "Variable"
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:447)
+	at org.knime.core.node.workflow.SingleNodeContainer.getModelSettingsUsingFlowObjectStack(SingleNodeContainer.java:472)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByFlowVariables(InitialData.java:137)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:109)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: org.knime.core.node.InvalidSettingsException: Unknown variable "Variable"
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.getVariable(ConfigEditTreeModel.java:763)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteWithVariable(ConfigEditTreeModel.java:679)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:657)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel.overwriteSettings(ConfigEditTreeModel.java:306)
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:445)
+	... 55 more
+2024-12-02 15:31:14,335 : ERROR : main :  : InitialData : Column Filter : 5:398 : Error overwriting settings of type MODEL with flow variables. So the flow variables are ignored. Error message is: Errors overwriting node settings with flow variables: Unknown variable "Variable".
+org.knime.core.node.InvalidSettingsException: Errors overwriting node settings with flow variables: Unknown variable "Variable"
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:447)
+	at org.knime.core.node.workflow.SingleNodeContainer.getModelSettingsUsingFlowObjectStack(SingleNodeContainer.java:472)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByFlowVariables(InitialData.java:137)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:109)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: org.knime.core.node.InvalidSettingsException: Unknown variable "Variable"
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.getVariable(ConfigEditTreeModel.java:763)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteWithVariable(ConfigEditTreeModel.java:679)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:657)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel.overwriteSettings(ConfigEditTreeModel.java:306)
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:445)
+	... 55 more
+2024-12-02 15:31:17,621 : ERROR : main :  : InitialData : Column Filter : 5:398 : Error overwriting settings of type MODEL with flow variables. So the flow variables are ignored. Error message is: Errors overwriting node settings with flow variables: Unknown variable "Variable".
+org.knime.core.node.InvalidSettingsException: Errors overwriting node settings with flow variables: Unknown variable "Variable"
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:447)
+	at org.knime.core.node.workflow.SingleNodeContainer.getModelSettingsUsingFlowObjectStack(SingleNodeContainer.java:472)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByFlowVariables(InitialData.java:137)
+	at org.knime.core.webui.node.dialog.InitialData.getSettingsOverwrittenByVariables(InitialData.java:109)
+	at org.knime.core.webui.node.dialog.InitialData.get(InitialData.java:96)
+	at org.knime.core.webui.data.InitialDataService.getInitialData(InitialDataService.java:109)
+	at org.knime.core.webui.node.DataServiceManager.callInitialDataService(DataServiceManager.java:143)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:120)
+	at org.knime.gateway.api.entity.UIExtensionEnt.<init>(UIExtensionEnt.java:90)
+	at org.knime.gateway.api.entity.NodeDialogEnt.<init>(NodeDialogEnt.java:74)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil$UIExtensionEnts.<init>(PageBuilderUtil.java:337)
+	at org.knime.js.cef.pagebuilder.PageBuilderUtil.initializePageBuilderForView(PageBuilderUtil.java:124)
+	at org.knime.js.cef.nodeview.CEFNodeView.lambda$6(CEFNodeView.java:413)
+	at org.knime.js.cef.nodeview.CEFNodeView$3.completed(CEFNodeView.java:427)
+	at com.equo.chromium.swt.internal.Chromium.lambda$9(Chromium.java:841)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.knime.js.cef.nodeview.CEFNodeView.blockUntilDisposed(CEFNodeView.java:463)
+	at org.knime.js.cef.nodeview.CEFNodeView.callOpenView(CEFNodeView.java:357)
+	at org.knime.core.node.AbstractNodeView.openView(AbstractNodeView.java:197)
+	at org.knime.core.node.Node.invokeOpenView(Node.java:2708)
+	at org.knime.workbench.editor2.actions.OpenNodeViewAction.openNodeView(OpenNodeViewAction.java:146)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:865)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor224.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:174)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:145)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: org.knime.core.node.InvalidSettingsException: Unknown variable "Variable"
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.getVariable(ConfigEditTreeModel.java:763)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteWithVariable(ConfigEditTreeModel.java:679)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:657)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.recursivelyOverwriteSettingsInChildren(ConfigEditTreeModel.java:722)
+	at org.knime.core.node.config.ConfigEditTreeModel$ConfigEditTreeNode.overwriteSettings(ConfigEditTreeModel.java:666)
+	at org.knime.core.node.config.ConfigEditTreeModel.overwriteSettings(ConfigEditTreeModel.java:306)
+	at org.knime.core.node.workflow.SingleNodeContainer.overwriteSettingsWithFlowVariables(SingleNodeContainer.java:445)
+	... 55 more
+2024-12-02 15:31:53,402 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 5:392 valid [5:1, 5:2, 5:3, 5:4, 5:6, 5:7, 5:323, 5:381, 5:388, 5:390, 5:391, 5:393, 5:394, 5:395, 5:396, 5:398, 5:399, 5:400, 5:401, 5:402, 5:403] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 15:31:53,403 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 5:392 valid [5:1, 5:2, 5:3, 5:4, 5:6, 5:7, 5:323, 5:381, 5:388, 5:390, 5:391, 5:393, 5:394, 5:395, 5:396, 5:398, 5:399, 5:400, 5:401, 5:402, 5:403] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-02 15:38:39,707 : WARN  : main :  : Node : Random Forest Learner : 3:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:38:41,291 : WARN  : main :  : Node : Random Forest Learner : 3:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:38:41,957 : WARN  : main :  : Node : Random Forest Learner : 3:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:38:58,536 : ERROR : comm-pool-thread-121 :  : NativeNodeContainer : Random Forest Predictor : 6:394 : Can't load the node model settings: String for key "predictionColumnName" not found.
+org.knime.core.node.InvalidSettingsException: String for key "predictionColumnName" not found.
+	at org.knime.core.node.config.base.ConfigBase.getString(ConfigBase.java:423)
+	at org.knime.base.node.mine.treeensemble2.node.predictor.AbstractPredictorConfiguration.loadInModel(AbstractPredictorConfiguration.java:139)
+	at org.knime.base.node.mine.treeensemble2.node.predictor.classification.TreeEnsembleClassificationPredictorNodeModel.validateSettings(TreeEnsembleClassificationPredictorNodeModel.java:193)
+	at org.knime.core.node.Node.validateSettings(Node.java:711)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:683)
+	at org.knime.core.node.workflow.NativeNodeContainer.loadContent(NativeNodeContainer.java:1059)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodes(WorkflowManager.java:9209)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8776)
+	at org.knime.core.node.workflow.WorkflowManager.loadWorkflowContent(WorkflowManager.java:8788)
+	at org.knime.core.node.workflow.WorkflowManager.paste(WorkflowManager.java:8423)
+	at org.knime.gateway.impl.webui.service.commands.Paste.executeWithLockedWorkflow(Paste.java:113)
+	at org.knime.gateway.impl.webui.service.commands.AbstractWorkflowCommand.execute(AbstractWorkflowCommand.java:76)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.executeCommandAndModifyCommandStacks(WorkflowCommands.java:289)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.execute(WorkflowCommands.java:177)
+	at org.knime.gateway.impl.webui.service.DefaultWorkflowService.executeWorkflowCommand(DefaultWorkflowService.java:167)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcWorkflowServiceWrapper.executeWorkflowCommand(JsonRpcWorkflowServiceWrapper.java:92)
+	at jdk.internal.reflect.GeneratedMethodAccessor188.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-02 15:39:12,274 : WARN  : comm-pool-thread-123 :  : Node : One to Many : 6:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 15:39:12,276 : WARN  : comm-pool-thread-123 :  : Node : One to Many : 6:7 : Possible value domain for column "BusinessTravel" is empty, use the Domain Calculator node (with a sufficient possible value limit) to create it.
+2024-12-02 15:39:20,862 : WARN  : KNIME-Worker-311-Math Formula 6:4 :  : Node : One to Many : 6:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 15:39:20,863 : WARN  : KNIME-Worker-311-Math Formula 6:4 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:39:20,865 : WARN  : KNIME-Worker-312-Numeric Binner 6:6 :  : Node : One to Many : 6:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 15:39:20,866 : WARN  : KNIME-Worker-313-One to Many 6:7 :  : Node : One to Many : 6:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 15:39:20,889 : WARN  : KNIME-Worker-315-Normalizer (PMML) 6:381 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:39:25,657 : WARN  : KNIME-Worker-318-Parameter Optimization Loop Start 6:389 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:39:25,711 : WARN  : KNIME-Worker-317-SMOTE 6:395 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (1); must be at most 2 x minimum node size (1)
+2024-12-02 15:39:53,376 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node Random Forest Learner 6:393. (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 15:39:53,380 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node Random Forest Learner 6:393. (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 15:39:53,425 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node Random Forest Learner 6:393. (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 15:39:53,739 : WARN  : comm-pool-thread-123 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.NullPointerException: Cannot invoke "org.knime.core.node.BufferedDataTable.getBufferedTableId()" because "table" is null
+	at org.knime.gateway.impl.node.port.TablePortViewFactory.createPortView(TablePortViewFactory.java:89)
+	at org.knime.gateway.impl.node.port.TablePortViewFactory.createPortView(TablePortViewFactory.java:1)
+	at org.knime.core.webui.node.port.PortViewManager.getPortView(PortViewManager.java:222)
+	at org.knime.core.webui.node.port.PortViewManager.lambda$1(PortViewManager.java:89)
+	at org.knime.core.webui.node.DataServiceManager.lambda$8(DataServiceManager.java:203)
+	at org.knime.core.webui.node.NodePortWrapper$1.getWithContext(NodePortWrapper.java:119)
+	at org.knime.core.webui.node.DataServiceManager.getOrCreateDataService(DataServiceManager.java:203)
+	at org.knime.core.webui.node.DataServiceManager.getRpcDataService(DataServiceManager.java:169)
+	at org.knime.core.webui.node.DataServiceManager.callRpcDataService(DataServiceManager.java:160)
+	at org.knime.gateway.impl.webui.service.DefaultPortService.callPortDataService(DefaultPortService.java:156)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcPortServiceWrapper.callPortDataService(JsonRpcPortServiceWrapper.java:85)
+	at jdk.internal.reflect.GeneratedMethodAccessor347.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-02 15:39:53,744 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Cannot invoke "org.knime.core.node.BufferedDataTable.getBufferedTableId()" because "table" is null (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 15:39:53,744 : ERROR : main :  : KnimeBrowserView :  :  : Error: Cannot invoke "org.knime.core.node.BufferedDataTable.getBufferedTableId()" because "table" is null (source: http://org.knime.core.ui.port/uiext/tableview/TableView.js; line: 899)
+2024-12-02 15:40:34,686 : WARN  : KNIME-Worker-308-Parameter Optimization Loop Start 6:389 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (3); must be at most 2 x minimum node size (2)
+2024-12-02 15:41:55,753 : WARN  : main :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (2); must be at most 2 x minimum node size (2)
+2024-12-02 15:41:56,876 : WARN  : main :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (2); must be at most 2 x minimum node size (2)
+2024-12-02 15:41:58,042 : WARN  : KNIME-Worker-310-Parameter Optimization Loop Start 6:389 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Invalid minimum child size (2); must be at most 2 x minimum node size (2)
+2024-12-02 15:42:33,664 : WARN  : main :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "minChildSize"
+2024-12-02 15:42:36,989 : WARN  : KNIME-Worker-322-Parameter Optimization Loop Start 6:389 :  : Node : Random Forest Learner : 6:393 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "minChildSize"
+2024-12-02 15:43:16,090 : WARN  : ModalContext :  : Node : One to Many : 7:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 15:54:57,449 : WARN  : ModalContext :  : Node : One to Many : 8:7 : Duplicate possible values found. Original column name will be appended
+2024-12-02 15:57:20,213 : ERROR : comm-pool-thread-136 :  : NativeNodeContainer : Random Forest Predictor : 6:401 : Can't load the node model settings: String for key "predictionColumnName" not found.
+org.knime.core.node.InvalidSettingsException: String for key "predictionColumnName" not found.
+	at org.knime.core.node.config.base.ConfigBase.getString(ConfigBase.java:423)
+	at org.knime.base.node.mine.treeensemble2.node.predictor.AbstractPredictorConfiguration.loadInModel(AbstractPredictorConfiguration.java:139)
+	at org.knime.base.node.mine.treeensemble2.node.predictor.classification.TreeEnsembleClassificationPredictorNodeModel.validateSettings(TreeEnsembleClassificationPredictorNodeModel.java:193)
+	at org.knime.core.node.Node.validateSettings(Node.java:711)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:683)
+	at org.knime.core.node.workflow.NativeNodeContainer.loadContent(NativeNodeContainer.java:1059)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodes(WorkflowManager.java:9209)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8776)
+	at org.knime.core.node.workflow.WorkflowManager.loadWorkflowContent(WorkflowManager.java:8788)
+	at org.knime.core.node.workflow.WorkflowManager.paste(WorkflowManager.java:8423)
+	at org.knime.gateway.impl.webui.service.commands.Paste.executeWithLockedWorkflow(Paste.java:113)
+	at org.knime.gateway.impl.webui.service.commands.AbstractWorkflowCommand.execute(AbstractWorkflowCommand.java:76)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.executeCommandAndModifyCommandStacks(WorkflowCommands.java:289)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.execute(WorkflowCommands.java:177)
+	at org.knime.gateway.impl.webui.service.DefaultWorkflowService.executeWorkflowCommand(DefaultWorkflowService.java:167)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcWorkflowServiceWrapper.executeWorkflowCommand(JsonRpcWorkflowServiceWrapper.java:92)
+	at jdk.internal.reflect.GeneratedMethodAccessor188.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-12-02 15:59:23,422 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 6:402 valid [6:1, 6:2, 6:3, 6:4, 6:6, 6:7, 6:323, 6:381, 6:388, 6:389, 6:392, 6:393, 6:394, 6:395, 6:396, 6:397, 6:398, 6:399, 6:400, 6:401] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 15:59:23,423 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 6:402 valid [6:1, 6:2, 6:3, 6:4, 6:6, 6:7, 6:323, 6:381, 6:388, 6:389, 6:392, 6:393, 6:394, 6:395, 6:396, 6:397, 6:398, 6:399, 6:400, 6:401] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-02 16:00:32,949 : WARN  : comm-pool-thread-141 :  : Node : Random Forest Learner : 6:400 : Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable "Maximum Tree Depth"
+2024-12-02 16:04:37,824 : WARN  : KNIME-Worker-376-Decision Tree to Ruleset 8:434 :  : NodeContainer : Decision Tree to Ruleset : 8:434 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3461)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:660)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:168)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:04:54,463 : WARN  : KNIME-Worker-377-Decision Tree to Ruleset 8:434 :  : NodeContainer : Decision Tree to Ruleset : 8:434 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3461)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:660)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:168)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:05:10,529 : WARN  : KNIME-Worker-378-Decision Tree to Ruleset 8:434 :  : NodeContainer : Decision Tree to Ruleset : 8:434 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3461)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:660)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:168)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:05:12,015 : WARN  : KNIME-Worker-379-Decision Tree to Ruleset 8:434 :  : NodeContainer : Decision Tree to Ruleset : 8:434 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3461)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:660)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:168)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:05:21,971 : WARN  : KNIME-Worker-380-Decision Tree to Ruleset 8:434 :  : NodeContainer : Decision Tree to Ruleset : 8:434 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3461)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:660)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:168)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:05:37,669 : WARN  : comm-pool-thread-143 :  : Node : PMML Writer : 8:433 : Please specify a file
+2024-12-02 16:06:00,410 : WARN  : KNIME-Worker-381-Ruleset to Table 8:433 :  : NodeContainer : Ruleset to Table : 8:433 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3461)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:660)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:168)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:06:10,935 : ERROR : KNIME-Worker-388-Ruleset to Table 8:433 :  : Node : Ruleset to Table : 8:433 : Execute failed: Only a single RuleSet model is supported.
+org.knime.core.node.InvalidSettingsException: Only a single RuleSet model is supported.
+	at org.knime.base.node.rules.engine.totable.RuleSetToTable.execute(RuleSetToTable.java:211)
+	at org.knime.base.node.rules.engine.totable.RulesToTableNodeModel.execute(RulesToTableNodeModel.java:50)
+	at org.knime.base.node.rules.engine.totable.RulesToTableNodeModel.execute(RulesToTableNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:592)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:605)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-02 16:06:17,369 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 8:433 valid [8:1, 8:2, 8:3, 8:4, 8:6, 8:7, 8:323, 8:381, 8:388, 8:403, 8:407, 8:409, 8:410, 8:413, 8:416, 8:417, 8:418, 8:419, 8:420, 8:421, 8:422, 8:423, 8:424, 8:425, 8:426, 8:427, 8:428, 8:429, 8:430, 8:431, 8:432] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-02 16:06:17,374 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 8:433 valid [8:1, 8:2, 8:3, 8:4, 8:6, 8:7, 8:323, 8:381, 8:388, 8:403, 8:407, 8:409, 8:410, 8:413, 8:416, 8:417, 8:418, 8:419, 8:420, 8:421, 8:422, 8:423, 8:424, 8:425, 8:426, 8:427, 8:428, 8:429, 8:430, 8:431, 8:432] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-02 16:15:15,322 : WARN  : comm-pool-thread-152 :  : Node : Math Formula : 6:397 : No configuration available

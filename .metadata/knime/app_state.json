@@ -2,11 +2,51 @@
   "version" : "5.3.3.v202411031102",
   "projects" : [ {
     "name" : "IBM Employee Attrition",
-    "active" : true,
+    "active" : false,
     "origin" : {
       "providerId" : "local",
       "spaceId" : "local",
       "relativePath" : "IBM Employee Attrition"
+    }
+  }, {
+    "name" : "final.knwf",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "final.knwf"
+    }
+  }, {
+    "name" : "log_regr_final.knwf",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "log_regr_final.knwf"
+    }
+  }, {
+    "name" : "randomforest.knwf",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "randomforest.knwf"
+    }
+  }, {
+    "name" : "gradient final.knwf",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "gradient final.knwf"
+    }
+  }, {
+    "name" : "dec tree optim",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "dec tree optim"
     }
   } ],
   "mostRecentlyUsedProjects" : [ {
@@ -26,6 +66,51 @@
       "spaceId" : "local",
       "projectType" : "WORKFLOW",
       "relativePath" : "IBM Employee Attrition"
+    }
+  }, {
+    "name" : "final.knwf",
+    "timeUsed" : "2024-12-01T16:29:13.141712+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "final.knwf"
+    }
+  }, {
+    "name" : "log_regr_final.knwf",
+    "timeUsed" : "2024-12-02T11:46:29.326055+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "log_regr_final.knwf"
+    }
+  }, {
+    "name" : "randomforest.knwf",
+    "timeUsed" : "2024-12-02T15:38:57.357228+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "randomforest.knwf"
+    }
+  }, {
+    "name" : "gradient final.knwf",
+    "timeUsed" : "2024-12-02T15:43:16.107164+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "gradient final.knwf"
+    }
+  }, {
+    "name" : "dec tree optim",
+    "timeUsed" : "2024-12-02T15:54:57.522381+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "dec tree optim"
     }
   } ]
 }

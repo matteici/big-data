@@ -3,8 +3,8 @@
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="441"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="944"/>
-		<item key="DIALOG_HEIGHT" value="886"/>
+		<item key="DIALOG_WIDTH" value="932"/>
+		<item key="DIALOG_HEIGHT" value="843"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

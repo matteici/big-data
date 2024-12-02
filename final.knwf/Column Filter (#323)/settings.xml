@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="63"/>
+                <entry key="0" type="xstring" value="BusinessTravel"/>
+                <entry key="1" type="xstring" value="Department"/>
+                <entry key="2" type="xstring" value="EducationField"/>
+                <entry key="3" type="xstring" value="Gender"/>
+                <entry key="4" type="xstring" value="JobRole"/>
+                <entry key="5" type="xstring" value="MaritalStatus"/>
+                <entry key="6" type="xstring" value="NumCompaniesWorked"/>
+                <entry key="7" type="xstring" value="OverTime"/>
+                <entry key="8" type="xstring" value="YearsAtCompany"/>
+                <entry key="9" type="xstring" value="YearsInCurrentRole"/>
+                <entry key="10" type="xstring" value="YearsSinceLastPromotion"/>
+                <entry key="11" type="xstring" value="YearsWithCurrManager"/>
+                <entry key="12" type="xstring" value="DailyRate"/>
+                <entry key="13" type="xstring" value="EmployeeNumber"/>
+                <entry key="14" type="xstring" value="HourlyRate"/>
+                <entry key="15" type="xstring" value="Age"/>
+                <entry key="16" type="xstring" value="Attrition"/>
+                <entry key="17" type="xstring" value="DistanceFromHome"/>
+                <entry key="18" type="xstring" value="Education"/>
+                <entry key="19" type="xstring" value="EnvironmentSatisfaction"/>
+                <entry key="20" type="xstring" value="JobInvolvement"/>
+                <entry key="21" type="xstring" value="JobLevel"/>
+                <entry key="22" type="xstring" value="JobSatisfaction"/>
+                <entry key="23" type="xstring" value="MonthlyIncome"/>
+                <entry key="24" type="xstring" value="MonthlyRate"/>
+                <entry key="25" type="xstring" value="PercentSalaryHike"/>
+                <entry key="26" type="xstring" value="PerformanceRating"/>
+                <entry key="27" type="xstring" value="RelationshipSatisfaction"/>
+                <entry key="28" type="xstring" value="StockOptionLevel"/>
+                <entry key="29" type="xstring" value="TotalWorkingYears"/>
+                <entry key="30" type="xstring" value="TrainingTimesLastYear"/>
+                <entry key="31" type="xstring" value="WorkLifeBalance"/>
+                <entry key="32" type="xstring" value="Travel_Frequently_BusinessTravel"/>
+                <entry key="33" type="xstring" value="Non-Travel_BusinessTravel"/>
+                <entry key="34" type="xstring" value="Research &amp; Development_Department"/>
+                <entry key="35" type="xstring" value="Human Resources_Department"/>
+                <entry key="36" type="xstring" value="Other_EducationField"/>
+                <entry key="37" type="xstring" value="Medical_EducationField"/>
+                <entry key="38" type="xstring" value="Marketing_EducationField"/>
+                <entry key="39" type="xstring" value="Technical Degree_EducationField"/>
+                <entry key="40" type="xstring" value="Human Resources_EducationField"/>
+                <entry key="41" type="xstring" value="Male_Gender"/>
+                <entry key="42" type="xstring" value="Research Scientist_JobRole"/>
+                <entry key="43" type="xstring" value="Laboratory Technician_JobRole"/>
+                <entry key="44" type="xstring" value="Manufacturing Director_JobRole"/>
+                <entry key="45" type="xstring" value="Healthcare Representative_JobRole"/>
+                <entry key="46" type="xstring" value="Manager_JobRole"/>
+                <entry key="47" type="xstring" value="Sales Representative_JobRole"/>
+                <entry key="48" type="xstring" value="Research Director_JobRole"/>
+                <entry key="49" type="xstring" value="Human Resources_JobRole"/>
+                <entry key="50" type="xstring" value="Married_MaritalStatus"/>
+                <entry key="51" type="xstring" value="Divorced_MaritalStatus"/>
+                <entry key="52" type="xstring" value="Bin2_NumCompaniesWorked"/>
+                <entry key="53" type="xstring" value="Bin3_NumCompaniesWorked"/>
+                <entry key="54" type="xstring" value="Yes_OverTime"/>
+                <entry key="55" type="xstring" value="Bin2_YearsAtCompany"/>
+                <entry key="56" type="xstring" value="Bin3_YearsAtCompany"/>
+                <entry key="57" type="xstring" value="Bin2_YearsInCurrentRole"/>
+                <entry key="58" type="xstring" value="Bin3_YearsInCurrentRole"/>
+                <entry key="59" type="xstring" value="Bin2_YearsSinceLastPromotion"/>
+                <entry key="60" type="xstring" value="Bin3_YearsSinceLastPromotion"/>
+                <entry key="61" type="xstring" value="Bin2_YearsWithCurrManager"/>
+                <entry key="62" type="xstring" value="Bin3_YearsWithCurrManager"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="15"/>
+                <entry key="0" type="xstring" value="EmployeeCount"/>
+                <entry key="1" type="xstring" value="Over18"/>
+                <entry key="2" type="xstring" value="StandardHours"/>
+                <entry key="3" type="xstring" value="Travel_Rarely_BusinessTravel"/>
+                <entry key="4" type="xstring" value="Sales_Department"/>
+                <entry key="5" type="xstring" value="Life Sciences_EducationField"/>
+                <entry key="6" type="xstring" value="Female_Gender"/>
+                <entry key="7" type="xstring" value="Sales Executive_JobRole"/>
+                <entry key="8" type="xstring" value="Single_MaritalStatus"/>
+                <entry key="9" type="xstring" value="Bin1_NumCompaniesWorked"/>
+                <entry key="10" type="xstring" value="No_OverTime"/>
+                <entry key="11" type="xstring" value="Bin1_YearsAtCompany"/>
+                <entry key="12" type="xstring" value="Bin1_YearsInCurrentRole"/>
+                <entry key="13" type="xstring" value="Bin1_YearsSinceLastPromotion"/>
+                <entry key="14" type="xstring" value="Bin1_YearsWithCurrManager"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist"/>
+            </config>
+        </config>
+    </config>
+    <config key="variables"/>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.3.v202410301420"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Filter"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1470, Cols: 48"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="5049043c-2ebe-4b99-b159-bdf26cf8963b"/>
+    </config>
+</config>

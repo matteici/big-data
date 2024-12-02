@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="selectedColumns">
+            <config key="selected_Internals">
+                <entry key="array-size" type="xint" value="35"/>
+                <entry key="0" type="xstring" value="Age"/>
+                <entry key="1" type="xstring" value="Attrition"/>
+                <entry key="2" type="xstring" value="BusinessTravel"/>
+                <entry key="3" type="xstring" value="DailyRate"/>
+                <entry key="4" type="xstring" value="Department"/>
+                <entry key="5" type="xstring" value="DistanceFromHome"/>
+                <entry key="6" type="xstring" value="Education"/>
+                <entry key="7" type="xstring" value="EducationField"/>
+                <entry key="8" type="xstring" value="EmployeeCount"/>
+                <entry key="9" type="xstring" value="EmployeeNumber"/>
+                <entry key="10" type="xstring" value="EnvironmentSatisfaction"/>
+                <entry key="11" type="xstring" value="Gender"/>
+                <entry key="12" type="xstring" value="HourlyRate"/>
+                <entry key="13" type="xstring" value="JobInvolvement"/>
+                <entry key="14" type="xstring" value="JobLevel"/>
+                <entry key="15" type="xstring" value="JobRole"/>
+                <entry key="16" type="xstring" value="JobSatisfaction"/>
+                <entry key="17" type="xstring" value="MaritalStatus"/>
+                <entry key="18" type="xstring" value="MonthlyIncome"/>
+                <entry key="19" type="xstring" value="MonthlyRate"/>
+                <entry key="20" type="xstring" value="NumCompaniesWorked"/>
+                <entry key="21" type="xstring" value="Over18"/>
+                <entry key="22" type="xstring" value="OverTime"/>
+                <entry key="23" type="xstring" value="PercentSalaryHike"/>
+                <entry key="24" type="xstring" value="PerformanceRating"/>
+                <entry key="25" type="xstring" value="RelationshipSatisfaction"/>
+                <entry key="26" type="xstring" value="StandardHours"/>
+                <entry key="27" type="xstring" value="StockOptionLevel"/>
+                <entry key="28" type="xstring" value="TotalWorkingYears"/>
+                <entry key="29" type="xstring" value="TrainingTimesLastYear"/>
+                <entry key="30" type="xstring" value="WorkLifeBalance"/>
+                <entry key="31" type="xstring" value="YearsAtCompany"/>
+                <entry key="32" type="xstring" value="YearsInCurrentRole"/>
+                <entry key="33" type="xstring" value="YearsSinceLastPromotion"/>
+                <entry key="34" type="xstring" value="YearsWithCurrManager"/>
+            </config>
+            <entry key="mode" type="xstring" value="MANUAL"/>
+            <config key="patternFilter">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="isCaseSensitive" type="xboolean" value="false"/>
+                <entry key="isInverted" type="xboolean" value="false"/>
+            </config>
+            <config key="manualFilter">
+                <config key="manuallySelected">
+                    <entry key="array-size" type="xint" value="35"/>
+                    <entry key="0" type="xstring" value="Age"/>
+                    <entry key="1" type="xstring" value="Attrition"/>
+                    <entry key="2" type="xstring" value="BusinessTravel"/>
+                    <entry key="3" type="xstring" value="DailyRate"/>
+                    <entry key="4" type="xstring" value="Department"/>
+                    <entry key="5" type="xstring" value="DistanceFromHome"/>
+                    <entry key="6" type="xstring" value="Education"/>
+                    <entry key="7" type="xstring" value="EducationField"/>
+                    <entry key="8" type="xstring" value="EmployeeCount"/>
+                    <entry key="9" type="xstring" value="EmployeeNumber"/>
+                    <entry key="10" type="xstring" value="EnvironmentSatisfaction"/>
+                    <entry key="11" type="xstring" value="Gender"/>
+                    <entry key="12" type="xstring" value="HourlyRate"/>
+                    <entry key="13" type="xstring" value="JobInvolvement"/>
+                    <entry key="14" type="xstring" value="JobLevel"/>
+                    <entry key="15" type="xstring" value="JobRole"/>
+                    <entry key="16" type="xstring" value="JobSatisfaction"/>
+                    <entry key="17" type="xstring" value="MaritalStatus"/>
+                    <entry key="18" type="xstring" value="MonthlyIncome"/>
+                    <entry key="19" type="xstring" value="MonthlyRate"/>
+                    <entry key="20" type="xstring" value="NumCompaniesWorked"/>
+                    <entry key="21" type="xstring" value="Over18"/>
+                    <entry key="22" type="xstring" value="OverTime"/>
+                    <entry key="23" type="xstring" value="PercentSalaryHike"/>
+                    <entry key="24" type="xstring" value="PerformanceRating"/>
+                    <entry key="25" type="xstring" value="RelationshipSatisfaction"/>
+                    <entry key="26" type="xstring" value="StandardHours"/>
+                    <entry key="27" type="xstring" value="StockOptionLevel"/>
+                    <entry key="28" type="xstring" value="TotalWorkingYears"/>
+                    <entry key="29" type="xstring" value="TrainingTimesLastYear"/>
+                    <entry key="30" type="xstring" value="WorkLifeBalance"/>
+                    <entry key="31" type="xstring" value="YearsAtCompany"/>
+                    <entry key="32" type="xstring" value="YearsInCurrentRole"/>
+                    <entry key="33" type="xstring" value="YearsSinceLastPromotion"/>
+                    <entry key="34" type="xstring" value="YearsWithCurrManager"/>
+                </config>
+                <config key="manuallyDeselected">
+                    <entry key="array-size" type="xint" value="0"/>
+                </config>
+                <entry key="includeUnknownColumns" type="xboolean" value="false"/>
+            </config>
+            <config key="typeFilter">
+                <config key="selectedTypes">
+                    <entry key="array-size" type="xint" value="0"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="view">
+        <config key="displayedColumns">
+            <entry key="array-size" type="xint" value="14"/>
+            <entry key="0" type="xstring" value="Name"/>
+            <entry key="1" type="xstring" value="Type"/>
+            <entry key="2" type="xstring" value="# Missing values"/>
+            <entry key="3" type="xstring" value="# Unique values"/>
+            <entry key="4" type="xstring" value="Minimum"/>
+            <entry key="5" type="xstring" value="Maximum"/>
+            <entry key="6" type="xstring" value="25% Quantile"/>
+            <entry key="7" type="xstring" value="50% Quantile (Median)"/>
+            <entry key="8" type="xstring" value="75% Quantile"/>
+            <entry key="9" type="xstring" value="Mean"/>
+            <entry key="10" type="xstring" value="Mean Absolute Deviation"/>
+            <entry key="11" type="xstring" value="Standard Deviation"/>
+            <entry key="12" type="xstring" value="Sum"/>
+            <entry key="13" type="xstring" value="10 most common values"/>
+        </config>
+        <entry key="showRowKeys" type="xboolean" value="false"/>
+        <entry key="showRowIndices" type="xboolean" value="false"/>
+        <entry key="showColumnDataType" type="xboolean" value="false"/>
+        <entry key="selectionMode" type="xstring" value="OFF"/>
+        <entry key="rowHeightMode" type="xstring" value="DEFAULT"/>
+        <entry key="customRowHeight" type="xint" value="0"/>
+        <entry key="enableRendererSelection" type="xboolean" value="false"/>
+        <entry key="showOnlySelectedRows" type="xboolean" value="false"/>
+        <entry key="showOnlySelectedRowsConfigurable" type="xboolean" value="false"/>
+        <entry key="title" type="xstring" value="Statistics"/>
+        <entry key="showTableSize" type="xboolean" value="true"/>
+        <entry key="enablePagination" type="xboolean" value="false"/>
+        <entry key="pageSize" type="xint" value="10"/>
+        <entry key="autoSizeColumnsToContent" type="xstring" value="FIXED"/>
+        <entry key="enableGlobalSearch" type="xboolean" value="true"/>
+        <entry key="enableColumnSearch" type="xboolean" value="true"/>
+        <entry key="enableSortingByHeader" type="xboolean" value="true"/>
+        <entry key="enableCellCopying" type="xboolean" value="true"/>
+        <entry key="skipRemainingColumns_Internals" type="xboolean" value="false"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.views.node.statistics.StatisticsNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Statistics View"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Views"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.views"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.3.3.v202410291553"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Views"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.views.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.3.v202410291553"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Statistics View"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports"/>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

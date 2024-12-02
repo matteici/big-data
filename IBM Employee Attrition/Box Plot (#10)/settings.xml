@@ -129,7 +129,7 @@
     <entry key="state" type="xstring" value="CONFIGURED"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="The selected dimension column &quot;BusinessTravel&quot; does not exist in the table"/>
+        <entry key="message" type="xstring" value="The selected dimension column &quot;Attrition&quot; does not exist in the table"/>
     </config>
     <entry key="factory" type="xstring" value="org.knime.base.views.node.boxplot.BoxPlotNodeFactory"/>
     <entry key="node-name" type="xstring" value="Box Plot"/>
